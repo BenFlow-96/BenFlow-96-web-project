@@ -1,45 +1,83 @@
+ /* =========================
+   BACKGROUND 
+========================= */
+body {
+    background-color: #f2f6ff; /* page background */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+/* =========================
+   HEADERS 
+========================= */
+h1 {
+    font-size: 36px;
+    color: #1d3557;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 28px;
+    color: #457b9d;
+    margin-top: 25px;
+}
+
+h3 {
+    font-size: 22px;
+    color: #2a9d8f;
+    margin-top: 15px;
+}
+
+/* =========================
+   PARAGRAPHS 
+========================= */
+p {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* =========================
+   NAV LINKS 
+========================= */
 nav {
     background-color: #222;
     padding: 12px;
+    margin-bottom: 20px;
 }
 
 nav a {
     color: white;
-    margin-right: 15px;
     text-decoration: none;
+    margin-right: 15px;
+    font-size: 16px;
 }
 
 nav a:hover {
     color: #ffcc00;
 }
 
-h1 {
-    color: #1d3557;
-}
-
-h2 {
-    color: #457b9d;
-}
-
-h3 {
-    color: #2a9d8f;
-}
-
-p {
-    line-height: 1.6;
-}
-
+/* =========================
+   LISTS 
+========================= */
 ul, ol {
-    background-color: #f1f1f1;
+    background-color: white;
     padding: 15px;
-    border-radius: 8px;
+    margin: 15px 0;
+    border-radius: 10px;
 }
 
-img {
-    width: 300px;
-    border-radius: 10px;
-    margin: 10px 0;
+li {
+    margin-bottom: 6px;
+    font-size: 16px;
 }
+
+/* =========================
+   MOVIE LAYOUT 
+========================= */
 .movie {
     display: flex;
     align-items: center;
@@ -56,14 +94,18 @@ img {
     border-radius: 10px;
 }
 
-.movie-info h4 {
+.movie-info h3 {
     margin: 0;
-    font-size: 18px;
     color: #1d3557;
 }
 
 .movie-info p {
     margin-top: 5px;
-    color: #333;
-    line-height: 1.4;
+}
+
+/* =========================
+   OPTIONAL LINK STYLING (outside nav)
+========================= */
+a:hover {
+    text-decoration: underline;
 }
