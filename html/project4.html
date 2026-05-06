@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Games of Recent Years | Ben's Ratings</title>
+    <link rel="stylesheet" href="../css/project4.css">
+    <script defer src="../js/script.js"></script>
+</head>
+<body>
+
+    <nav>
+        <ul class="navbar">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="project4.html">Project 4</a></li>
+            <li><a href="../project3/project3.html">Project 3</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Top Games of the Last Few Years</h1>
+        <p>My personal ratings and thoughts on some of the best recent video games.</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>My Favorite Recent Games</h2>
+            <ul>
+                <li>Elden Ring - 10/10</li>
+                <li>Baldur's Gate 3 - 9.8/10</li>
+                <li>Marvel's Spider-Man 2 - 9/10</li>
+                <li>The Legend of Zelda: Tears of the Kingdom - 9.7/10</li>
+            </ul>
+        </section>
+
+        <section class="game-grid">
+            <div class="game-card">
+                <h3>Elden Ring</h3>
+                <img src="../images/eldenring.jpg" alt="Elden Ring game cover art">
+                <p>A massive open-world RPG with incredible combat, lore, and challenge.</p>
+                <p><strong>My Rating:</strong> 10/10</p>
+            </div>
+
+            <div class="game-card">
+                <h3>Baldur's Gate 3</h3>
+                <img src="../images/baldursgate3.jpg" alt="Baldur's Gate 3 cover art">
+                <p>An immersive RPG with unmatched player freedom and storytelling.</p>
+                <p><strong>My Rating:</strong> 9.8/10</p>
+            </div>
+
+            <div class="game-card">
+                <h3>Spider-Man 2</h3>
+                <img src="../images/spiderman2.jpg" alt="Spider-Man 2 cover art">
+                <p>Fast-paced action with great visuals and emotional storytelling.</p>
+                <p><strong>My Rating:</strong> 9/10</p>
+            </div>
+
+            <div class="game-card">
+                <h3>Tears of the Kingdom</h3>
+                <img src="../images/tearskingdom.jpg" alt="Zelda Tears of the Kingdom cover art">
+                <p>Creative gameplay and exploration that expands on Breath of the Wild.</p>
+                <p><strong>My Rating:</strong> 9.7/10</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Submit Your Favorite Game</h2>
+            <form id="gameForm">
+                <label for="username">Your Name:</label>
+                <input type="text" id="username" required>
+
+                <label for="favoriteGame">Favorite Game:</label>
+                <input type="text" id="favoriteGame" required>
+
+                <button type="submit">Submit</button>
+            </form>
+
+            <div id="responseMessage"></div>
+        </section>
+
+        <section>
+            <h2>Learn More</h2>
+            <p>Visit
+                <a href="https://thegameawards.com/" target="_blank">
+                    The Game Awards
+                </a>
+                for major gaming awards and releases.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Created by Ben Flores | Web Design Project 4</p>
+    </footer>
+
+</body>
+</html>
