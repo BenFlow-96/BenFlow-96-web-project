@@ -1,114 +1,236 @@
+/* General Page Styling */
 body {
     margin: 0;
+    padding: 0;
     font-family: Arial, sans-serif;
     background-color: #121212;
     color: #f4f4f4;
+    line-height: 1.6;
 }
 
+/* Navigation Bar */
 .navbar {
     display: flex;
     justify-content: center;
     list-style: none;
-    background-color: #1f1f1f;
+    background-color: #000000;
     padding: 15px;
     margin: 0;
+    flex-wrap: wrap;
 }
 
 .navbar li {
-    margin: 0 15px;
+    margin: 10px 15px;
 }
 
 .navbar a {
-    color: white;
+    color: #ffffff;
     text-decoration: none;
     font-weight: bold;
+    font-size: 1.1rem;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .navbar a:hover {
-    color: #00bcd4;
+    background-color: #00bcd4;
+    color: #000000;
 }
 
+/* Header Section */
 header {
     text-align: center;
-    padding: 30px;
+    padding: 40px 20px;
 }
 
 h1 {
-    color: #00bcd4;
+    color: #00e5ff;
     font-size: 3rem;
+    margin-bottom: 10px;
 }
 
 h2 {
-    color: #ff9800;
+    color: #ffb74d;
+    font-size: 2rem;
+    margin-top: 30px;
 }
 
 h3 {
-    color: #4caf50;
+    color: #81c784;
+    font-size: 1.5rem;
 }
 
+/* Main Layout */
 main {
     padding: 20px;
+    max-width: 1200px;
+    margin: auto;
 }
 
+/* Paragraph Styling */
+p {
+    color: #e0e0e0;
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+/* List Styling */
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+    color: #ffffff;
+    font-size: 1.1rem;
+}
+
+/* Links */
+a {
+    color: #00e5ff;
+}
+
+a:hover {
+    color: #ffb74d;
+}
+
+/* Game Grid Layout */
 .game-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+    gap: 25px;
+    margin-top: 20px;
 }
 
+/* Game Cards */
 .game-card {
     background-color: #1e1e1e;
-    padding: 15px;
-    border-radius: 10px;
+    padding: 20px;
+    border-radius: 12px;
     text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
 
 .game-card img {
     width: 100%;
     max-width: 250px;
+    height: auto;
     border-radius: 10px;
+    margin: 15px 0;
 }
 
-p {
-    line-height: 1.6;
-}
-
+/* Form Section */
 form {
     display: flex;
     flex-direction: column;
-    max-width: 400px;
+    max-width: 500px;
     margin: auto;
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 12px;
 }
 
-input, button {
-    padding: 10px;
-    margin: 10px 0;
+label {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #ffffff;
 }
 
-button {
-    background-color: #00bcd4;
-    color: white;
+input {
+    padding: 12px;
+    margin-top: 5px;
     border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Button Styling */
+button {
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #00bcd4;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
     cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
     background-color: #0097a7;
 }
 
+/* Dynamic Response Message */
+#responseMessage {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.1rem;
+    color: #81c784;
+    font-weight: bold;
+}
+
+/* Footer */
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #1f1f1f;
+    background-color: #000000;
+    margin-top: 40px;
 }
 
+footer p {
+    color: #ffffff;
+    margin: 0;
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
     h1 {
-        font-size: 2rem;
+        font-size: 2.2rem;
+    }
+
+    h2 {
+        font-size: 1.6rem;
     }
 
     .navbar {
         flex-direction: column;
         align-items: center;
+    }
+
+    .navbar li {
+        margin: 8px 0;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    .game-card {
+        padding: 15px;
+    }
+
+    form {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    p, ul li {
+        font-size: 0.95rem;
+    }
+
+    button {
+        font-size: 0.95rem;
     }
 }
